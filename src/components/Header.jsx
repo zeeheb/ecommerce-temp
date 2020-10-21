@@ -6,7 +6,7 @@ import FacebookIcon from "@material-ui/icons/Facebook";
 import logo from "../imgs/logo.png";
 
 const appbarStyle = {
-  background: "none",
+  background: 'none',
 };
 
 const appbarWrapper = {
@@ -26,7 +26,7 @@ const logoStyle = {
 export class Header extends Component {
   render() {
     return (
-      <div>
+      <div style={{ marginBottom: '60px' }}>
         <AppBar style={appbarStyle} elevation={0}>
           <div style={{ display: "flex" }}>
             <div style={{ marginLeft: "0", marginRight: "auto" }}>
