@@ -1,0 +1,96 @@
+/* .pulse-button {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border: none;
+  box-shadow: 0 0 0 0 rgba(232, 76, 61, 0.7);
+  border-radius: 50%;
+  background-color: #e84c3d;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/173024/jonathanlarradet_copy.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  -webkit-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  -moz-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  -ms-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+.pulse-button:hover {
+  -webkit-animation: none;
+  -moz-animation: none;
+  -ms-animation: none;
+  animation: none;
+}
+
+@-webkit-keyframes pulse {
+  to {
+    box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);
+  }
+}
+@-moz-keyframes pulse {
+  to {
+    box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);
+  }
+}
+@-ms-keyframes pulse {
+  to {
+    box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);
+  }
+}
+@keyframes pulse {
+  to {
+    box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);
+  }
+} */
+
+#home {
+  background: linear-gradient(320.54deg, #22213c 0%, #242345 100%);
+
+  display: flex;
+  justify-content: center;
+  max-height: 1000px;
+}
+
+#home .content-wrapper {
+  position: relative;
+
+  width: 598.766px;
+  max-width: 1100px;
+
+  height: 637px;
+  max-height: 1000px;
+
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.estampa-style {
+  position: absolute;
+  right: 290px;
+
+  height: 568.891px;
+  object-fit: cover;
+  margin: auto;
+}
+
+.go-to-store {
+  position: absolute;
+
+  right: -90px;
+  top: 250px;
+
+  display: flex;
+  flex-direction: column;
+
+  text-align: right;
+
+  border-radius: 10px;
+  width: 220px;
+  font-family: Brianne;
+  font-size: 100px;
+
+  border: solid;
+  border-color: black;
+  color: black;
+}

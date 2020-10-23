@@ -6,7 +6,7 @@ import FacebookIcon from "@material-ui/icons/Facebook";
 import logo from "../imgs/logo.png";
 
 const appbarStyle = {
-  background: 'none',
+  background: "none",
 };
 
 const appbarWrapper = {
@@ -21,16 +21,18 @@ const iconStyle = {
 
 const logoStyle = {
   width: "200px",
-  padding: "12px",
+  padding: "12px, 0px, 0px, 12px",
 };
 export class Header extends Component {
   render() {
     return (
-      <div style={{ marginBottom: '60px' }}>
+      <div style={{ marginBottom: "60px" }}>
         <AppBar style={appbarStyle} elevation={0}>
           <div style={{ display: "flex" }}>
             <div style={{ marginLeft: "0", marginRight: "auto" }}>
-              <img style={logoStyle} src={logo}></img>
+              <a href={""}>
+                <img style={logoStyle} src={logo}></img>
+              </a>
             </div>
             <div style={{ marginLeft: "auto", marginRight: "0" }}>
               <Toolbar style={appbarWrapper}>
