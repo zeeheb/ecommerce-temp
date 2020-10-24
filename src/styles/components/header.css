@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  background-color: #242345;
+}
+
+.appbar-style {
+  background-color: none;
+}
+
+.appbar-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.icon-style {
+  font-size: 2rem;
+  color: white;
+}
+
+.logo-style {
+  width: 200px;
+  padding: 12px, 0px, 0px, 12px;
+}

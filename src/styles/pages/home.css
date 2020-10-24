@@ -45,42 +45,37 @@
 
 #home {
   background: linear-gradient(320.54deg, #22213c 0%, #242345 100%);
-
-  display: flex;
-  justify-content: center;
-  max-height: 1000px;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
 }
 
 #home .content-wrapper {
   position: relative;
 
-  width: 598.766px;
-  max-width: 1100px;
-
-  height: 637px;
-  max-height: 1000px;
-
-  align-items: flex-start;
   flex-direction: column;
-  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.estampa-style {
+.content-wrapper .estampa-style {
+  flex: 1;
   position: absolute;
-  right: 290px;
+  left: 250px;
 
   height: 568.891px;
   object-fit: cover;
   margin: auto;
 }
 
-.go-to-store {
-  position: absolute;
+.content-wrapper .go-to-store {
+  position: relative;
 
-  right: -90px;
+  right: -350px;
   top: 250px;
 
-  display: flex;
+  flex: 1;
   flex-direction: column;
 
   text-align: right;

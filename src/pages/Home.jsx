@@ -7,17 +7,15 @@ import "../styles/pages/home.css";
 function Home() {
   return (
     <div id="home">
+      <Header></Header>
       <div className="content-wrapper">
-        <Header></Header>
+        <main>
+          <img src={estampa2} className="estampa-style" alt="logo"></img>
+        </main>
         <div>
-          <main>
-            <img src={estampa2} className="estampa-style" alt="logo"></img>
-          </main>
-          <div>
-            <Link to="/store">
-              <span className="go-to-store">Store</span>
-            </Link>
-          </div>
+          <Link to="/store">
+            <span className="go-to-store">Store</span>
+          </Link>
         </div>
       </div>
     </div>
