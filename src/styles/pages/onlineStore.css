@@ -1,16 +1,16 @@
 .grid-container {
-  padding: 70px 0;
+  margin-top: 30px;
   border: 3px solid green;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .grid-item {
   background-color: #ff00ff;
   border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  margin: 20px;
+  padding: 10px;
+  margin: 10px;
   font-size: 25px;
   text-align: center;
-  height: 25vh;
-  width: 25vw;
 }

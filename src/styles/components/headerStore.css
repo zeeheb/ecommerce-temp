@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  background-color: #242345;
+}
+
+.appbar-style {
+  background-color: none;
+}
+
+.appbar-wrapper {
+  width: 80%;
+  border: 1px solid #ffffff;
+  max-width: 329px;
+  max-height: 93px;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  margin: 15px;
+  right: 80px;
+}
+
+.icon-style {
+  font-size: 2rem;
+  color: white;
+}
+
+.logo-style {
+  width: 250px;
+  margin: 30px;
+}
+
+.my-cart {
+  font-family: Comic Sans MS;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #fff;
+  margin-left: 10px;
+}

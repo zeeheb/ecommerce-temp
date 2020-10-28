@@ -10,42 +10,42 @@ export class Header extends Component {
   render() {
     return (
       <div style={{ marginBottom: "60px" }}>
-        <AppBar className="appbar-style" elevation={0}>
-          <div className="header">
+        <AppBar className='appbar-style' elevation={0}>
+          <div className='header'>
             <div style={{ marginLeft: "0", marginRight: "auto" }}>
               <a href={"/"}>
-                <img className="logo-style" src={logo} alt="logo"></img>
+                <img className='logo-style' src={logo} alt='logo'></img>
               </a>
             </div>
             <div style={{ marginLeft: "auto", marginRight: "0" }}>
-              <Toolbar className="appbar-wrapper">
+              <Toolbar className='appbar-wrapper'>
                 <a
                   href={"https://instagram.com/the.scumbags"}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  target='_blank'
+                  rel='noopener noreferrer'
                 >
                   <IconButton>
-                    <InstagramIcon className="icon-style"></InstagramIcon>
+                    <InstagramIcon className='icon-style'></InstagramIcon>
                   </IconButton>
                 </a>
                 <a
                   href={"https://facebook.com/thescumbags"}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  target='_blank'
+                  rel='noopener noreferrer'
                 >
                   <IconButton>
-                    <FacebookIcon className="icon-style" />
+                    <FacebookIcon className='icon-style' />
                   </IconButton>
                 </a>
                 <a
                   href={
                     "https://www.youtube.com/channel/UC-bImr91y27m2lYhWwKEdRw"
                   }
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  target='_blank'
+                  rel='noopener noreferrer'
                 >
                   <IconButton>
-                    <YouTubeIcon className="icon-style" />
+                    <YouTubeIcon className='icon-style' />
                   </IconButton>
                 </a>
               </Toolbar>
