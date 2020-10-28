@@ -17,6 +17,22 @@
   color: #fff;
   margin: 15px;
   right: 80px;
+
+  font-family: Comic Sans MS;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #fff;
+  margin-left: 10px;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.appbar-wrapper:hover {
+  color: #00ffff;
+  border-color: #00ffff;
 }
 
 .icon-style {
@@ -27,16 +43,4 @@
 .logo-style {
   width: 250px;
   margin: 30px;
-}
-
-.my-cart {
-  font-family: Comic Sans MS;
-  font-size: 19px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 26px;
-  letter-spacing: 0em;
-  text-align: center;
-  color: #fff;
-  margin-left: 10px;
 }

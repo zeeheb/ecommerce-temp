@@ -1,14 +1,11 @@
 .grid-container {
   margin-top: 30px;
-  border: 3px solid green;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
 .grid-item {
-  background-color: #ff00ff;
-  border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 10px;
   margin: 10px;
   font-size: 25px;

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { AppBar, IconButton, Toolbar } from "@material-ui/core";
+import { AppBar, Toolbar } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import logo from "../imgs/logo.png";
 import "../styles/components/headerStore.css";
@@ -17,14 +17,17 @@ export class Header extends Component {
               </a>
             </div>
             <div style={{ marginLeft: "auto", marginRight: "0" }}>
-              <Toolbar className='appbar-wrapper'>
-                <Link to={"/Cart"} target='_blank' rel='noopener noreferrer'>
-                  <IconButton>
-                    <img src={cartIcon} alt='cart' height='86px' width='72px' />
-                    <typography className='my-cart'>MEU CARRINHO</typography>
-                  </IconButton>
-                </Link>
-              </Toolbar>
+              <Link
+                to={"/Cart"}
+                target='_blank'
+                rel='noopener noreferrer'
+                style={{ textDecoration: "none" }}
+              >
+                <Toolbar className='appbar-wrapper'>
+                  <img src={cartIcon} alt='cart' height='86px' width='72px' />
+                  MEU CARRINHO
+                </Toolbar>
+              </Link>
             </div>
           </div>
         </AppBar>
