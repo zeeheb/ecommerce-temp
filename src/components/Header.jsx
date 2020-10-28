@@ -4,45 +4,28 @@ import InstagramIcon from "@material-ui/icons/Instagram";
 import YouTubeIcon from "@material-ui/icons/YouTube";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import logo from "../imgs/logo.png";
+import "../styles/components/header.css";
 
-const appbarStyle = {
-  background: "none",
-};
-
-const appbarWrapper = {
-  width: "80%",
-  margin: "0 auto",
-};
-
-const iconStyle = {
-  fontSize: "2rem",
-  color: "white",
-};
-
-const logoStyle = {
-  width: "200px",
-  padding: "12px, 0px, 0px, 12px",
-};
 export class Header extends Component {
   render() {
     return (
       <div style={{ marginBottom: "60px" }}>
-        <AppBar style={appbarStyle} elevation={0}>
-          <div style={{ display: "flex" }}>
+        <AppBar className="appbar-style" elevation={0}>
+          <div className="header">
             <div style={{ marginLeft: "0", marginRight: "auto" }}>
-              <a href={""}>
-                <img style={logoStyle} src={logo}></img>
+              <a href={"/"}>
+                <img className="logo-style" src={logo} alt="logo"></img>
               </a>
             </div>
             <div style={{ marginLeft: "auto", marginRight: "0" }}>
-              <Toolbar style={appbarWrapper}>
+              <Toolbar className="appbar-wrapper">
                 <a
                   href={"https://instagram.com/the.scumbags"}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <IconButton>
-                    <InstagramIcon style={iconStyle}></InstagramIcon>
+                    <InstagramIcon className="icon-style"></InstagramIcon>
                   </IconButton>
                 </a>
                 <a
@@ -51,7 +34,7 @@ export class Header extends Component {
                   rel="noopener noreferrer"
                 >
                   <IconButton>
-                    <FacebookIcon style={iconStyle} />
+                    <FacebookIcon className="icon-style" />
                   </IconButton>
                 </a>
                 <a
@@ -62,7 +45,7 @@ export class Header extends Component {
                   rel="noopener noreferrer"
                 >
                   <IconButton>
-                    <YouTubeIcon style={iconStyle} />
+                    <YouTubeIcon className="icon-style" />
                   </IconButton>
                 </a>
               </Toolbar>
