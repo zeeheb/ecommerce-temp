@@ -32,10 +32,9 @@ function Home() {
             />
             <div></div>
             <img
-              class='active'
+              class='OnlineStoreButtonhover'
               src={OnlineStoreButtonhover}
               alt=''
-              style={{ left: "auto" }}
             />
           </div>
         </div>
