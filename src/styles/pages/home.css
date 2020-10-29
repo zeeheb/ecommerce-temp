@@ -72,6 +72,7 @@
 .content-wrapper .go-to-store {
   position: relative;
 
+
   right: -350px;
   top: 250px;
 
@@ -89,3 +90,4 @@
   border-color: black;
   color: black;
 }
+
