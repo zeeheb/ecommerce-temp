@@ -32,6 +32,9 @@
   margin: 70px 0px 0px 200px;
 }
 
+/*   right: -350px;
+  top: 250px; */
+
 .acesse {
   font-family: Comic;
   font-size: 38px;
@@ -58,3 +61,4 @@
 .online-store-button-static:hover {
   opacity: 0;
 }
+

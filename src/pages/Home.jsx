@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import capaCD from "../imgs/cdHomePage.png";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import "../styles/pages/home.css";
 import { Typography } from "@material-ui/core";
@@ -39,6 +39,7 @@ function Home() {
           </div>
         </div>
       </div>
+      <Footer className='footer' />
     </div>
   );
 }
