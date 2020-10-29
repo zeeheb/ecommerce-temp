@@ -1,13 +1,14 @@
 import React from "react";
-import "../styles/pages/onlineStore.css";
-import Header from "../components/HeaderStore";
 import camiseta1 from "../imgs/camisetas/camiseta1.svg";
 import camiseta2 from "../imgs/camisetas/camiseta2.svg";
+
+import HeaderStore from "../components/HeaderStore";
+import "../styles/pages/onlineStore.css";
 
 function OnlineStore() {
   return (
     <div>
-      <Header></Header>
+      <HeaderStore />
       <div>
         <h1>Loja:</h1>
       </div>

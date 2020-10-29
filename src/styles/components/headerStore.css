@@ -1,13 +1,4 @@
-.header {
-  display: flex;
-  background-color: #242345;
-}
-
-.appbar-style {
-  background-color: none;
-}
-
-.appbar-wrapper {
+.appbar-wrapper1 {
   width: 80%;
   border: 1px solid #ffffff;
   max-width: 329px;
@@ -30,14 +21,9 @@
   text-underline-position: under;
 }
 
-.appbar-wrapper:hover {
+.appbar-wrapper1:hover {
   color: #00ffff;
   border-color: #00ffff;
-}
-
-.icon-style {
-  font-size: 2rem;
-  color: white;
 }
 
 .logo-style {

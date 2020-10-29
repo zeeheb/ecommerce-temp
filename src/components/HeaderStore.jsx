@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { AppBar, Toolbar } from "@material-ui/core";
 import { Link } from "react-router-dom";
+import cartIcon from "../imgs/carrinho/carrinho.gif";
 import logo from "../imgs/logo.png";
 import "../styles/components/headerStore.css";
-import cartIcon from "../imgs/carrinho/carrinho.gif";
 
 export class Header extends Component {
   render() {
@@ -23,7 +23,7 @@ export class Header extends Component {
                 rel='noopener noreferrer'
                 style={{ textDecoration: "none" }}
               >
-                <Toolbar className='appbar-wrapper'>
+                <Toolbar className='appbar-wrapper1'>
                   <img src={cartIcon} alt='cart' height='86px' width='72px' />
                   MEU CARRINHO
                 </Toolbar>

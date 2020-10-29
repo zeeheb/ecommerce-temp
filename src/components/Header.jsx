@@ -9,7 +9,7 @@ import "../styles/components/header.css";
 export class Header extends Component {
   render() {
     return (
-      <div style={{ marginBottom: "60px" }}>
+      <div style={{ marginBottom: "100px" }}>
         <AppBar className='appbar-style' elevation={0}>
           <div className='header'>
             <div style={{ marginLeft: "0", marginRight: "auto" }}>
