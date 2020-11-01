@@ -8,6 +8,14 @@ import "../styles/pages/onlineStore.css";
 
 export class OnlineStore extends Component {
 
+  constructor(props) {
+    super(props)
+
+    this.state = {
+
+    }
+  }
+
 
   // return (
   //   <div>

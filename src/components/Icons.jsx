@@ -14,6 +14,20 @@ import yt from '../styles/components/icons/yt.svg'
 
 
 export class Icons extends Component {
+
+  constructor(props) {
+    super(props)
+
+
+    this.state = {
+      igSrc: ig,
+      fbSrc: fb,
+      spSrc: sp,
+      ytSrc: yt,
+    }
+  }
+
+
   render() {
     return (
       <div style={{ margin: '0 auto' }}>
@@ -25,7 +39,7 @@ export class Icons extends Component {
               <a href={"https://facebook.com/thescumbags"}
                 target='_blank'
                 rel='noopener noreferrer'>
-                <img src={fb}></img>
+                <img onMouseOver={() => this.setState({ fbSrc: fbHover })} onMouseOut={() => this.setState({ fbSrc: fb })} src={this.state.fbSrc}></img>
               </a>
             </button>
           </div>
@@ -35,7 +49,7 @@ export class Icons extends Component {
               <a href={"https://instagram.com/the.scumbags"}
                 target='_blank'
                 rel='noopener noreferrer'>
-                <img src={ig}></img>
+                <img onMouseOver={() => this.setState({ igSrc: igHover })} onMouseOut={() => this.setState({ igSrc: ig })} src={this.state.igSrc}></img>
               </a>
             </button>
           </div>
@@ -44,7 +58,7 @@ export class Icons extends Component {
               <a href={"https://www.youtube.com/channel/UC-bImr91y27m2lYhWwKEdRw"}
                 target='_blank'
                 rel='noopener noreferrer'>
-                <img src={yt}></img>
+                <img onMouseOver={() => this.setState({ ytSrc: ytHover })} onMouseOut={() => this.setState({ ytSrc: yt })} src={this.state.ytSrc}></img>
               </a>
             </button>
           </div>
@@ -53,7 +67,7 @@ export class Icons extends Component {
               <a href={"https://facebook.com/thescumbags"}
                 target='_blank'
                 rel='noopener noreferrer'>
-                <img src={sp}></img>
+                <img onMouseOver={() => this.setState({ spSrc: spHover })} onMouseOut={() => this.setState({ spSrc: sp })} src={this.state.spSrc}></img>
               </a>
             </button>
           </div>
