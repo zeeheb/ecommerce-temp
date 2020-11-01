@@ -17,4 +17,33 @@
     /* min-height: 200px; */
 }
 
+.ft-gif {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 30%; 
+    height: 30%;
+    animation: moving 5s infinite
+}
 
+.gif-resp {
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%; 
+    height: 100%;
+}
+
+
+
+@keyframes moving {
+    0%,
+    100% {
+        left: -1000px
+    }
+
+    50% {
+        left: 1000px
+    }
+}

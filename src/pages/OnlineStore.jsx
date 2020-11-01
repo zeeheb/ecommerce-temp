@@ -16,36 +16,6 @@ export class OnlineStore extends Component {
     }
   }
 
-
-  // return (
-  //   <div>
-  //     <div class='container-fluid'>
-  //       <div class='row'>
-  //         <HeaderStore />
-  //       </div>
-  //       <div className='grid-container'>
-  //         <div class='row no-gutters' style={{ alignItems: "center" }}>
-  //           <div class='col-sm' className='grid-item'>
-  //             <img src={camiseta1} alt='camiseta' />
-  //           </div>
-  //           <div class='col-sm' className='grid-item'>
-  //             <img src={camiseta2} alt='camiseta' />
-  //           </div>
-  //           <div class='col-sm' className='grid-item'>
-  //             <img src={camiseta1} alt='camiseta' />
-  //           </div>
-  //           <div class='col-sm' className='grid-item'>
-  //             <img src={camiseta2} alt='camiseta' />
-  //           </div>
-  //         </div>
-  //       </div>
-  //       <div class='row'>
-  //         <Footer />
-  //       </div>
-  //     </div>
-  //   </div>
-  // );
-
   render() {
 
     return (
