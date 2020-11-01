@@ -4,7 +4,7 @@
     left: 0;
     bottom: 0;
     width: 100%; 
-    height: 322px 
+    height: 35% 
 }
 
 .image-resp {
@@ -14,7 +14,7 @@
     bottom: 0;
     width: 100%; 
     height: 100%;
-    min-height: 200px;
+    /* min-height: 200px; */
 }
 
 

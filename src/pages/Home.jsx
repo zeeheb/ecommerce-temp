@@ -17,7 +17,7 @@ function Home() {
       <div class='container-fluid' style={{ marginTop: "150px" }}>
         <div class='row no-gutters' style={{ alignItems: "center" }}>
           <div class='col-sm' className='section1'>
-            <img class='static' src={capaCD} alt='' />
+
 
             <Typography></Typography>
             <img src={windowsXP} alt='' />
@@ -39,7 +39,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <Footer className='footer' />
+      <Footer />
     </div>
   );
 }
