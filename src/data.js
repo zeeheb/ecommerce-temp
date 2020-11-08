@@ -9,25 +9,33 @@ export default {
                 id: 1,
                 name: 'CAMISETA SCUMBAGS a',
                 price: "44.00",
-                url: camiseta1
+                sizes: ['PP', 'P', 'G', 'GG'],
+                url: camiseta1,
+                description: 'lorem ipsum ducarai lorem ipsum ducarailorem ipsum ducarailorem ipsum ducarailorem ipsum ducarailorem ipsum ducarai'
             },
             {
                 id: 2,
                 name: 'Camiseta b',
                 price: "66.00",
-                url: camiseta2
+                sizes: ['PP', 'P', 'M', 'G', 'GG'],
+                url: camiseta2,
+                description: 'lorem ipsum ducarai lorem ipsum ducarailorem ipsusum ducarailorem ipsum ducarailorem ipsum ducarai'
             },
             {
                 id: 3,
                 name: 'Camiseta c',
                 price: "77.00",
-                url: camiseta1
+                sizes: ['PP', 'GG'],
+                url: camiseta1,
+                description: 'lorem ipsum ducarai loreilorem ipsum ducarailorem ipsum ducarailorem ipsum ducarailorem ipsum ducarai'
             },
             {
                 id: 4,
                 name: 'Camiseta c',
                 price: "8.00",
-                url: camiseta2
+                sizes: ['PP', 'P', 'M', 'G', 'GG'],
+                url: camiseta2,
+                description: 'lorem ipsum ducarai loremucarailorem ipsu ducarailorducarai'
             }
         ]
 }

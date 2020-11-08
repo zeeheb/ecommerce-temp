@@ -8,54 +8,89 @@ import CircularProgress from '@material-ui/core/CircularProgress';
 
 
 export class Item extends Component {
-    constructor(props) {
-        super(props)
+  constructor(props) {
+    super(props)
 
-        this.state = {
-            actualProduct: '',
-        }
+    this.state = {
+      actualProduct: '',
     }
+  }
 
 
-    componentDidMount() {
-        this.checkActual()
-    }
+  componentDidMount() {
+    this.checkActual()
+  }
 
-    checkActual = () => {
-        data.products.forEach((i) => {
-            if (this.props.match && i.id.toString() === this.props.match.params.id) {
-                this.setState({ actualProduct: i })
-            }
-        })
-    }
+  checkActual = () => {
+    data.products.forEach((i) => {
+      if (this.props.match && i.id.toString() === this.props.match.params.id) {
+        this.setState({ actualProduct: i })
+      }
+    })
+  }
 
-    render() {
+  render() {
 
-        const { actualProduct } = this.state;
-        return (
-            <div style={{ display: 'flex', flexDirection: 'column' }}>
-                <div style={{ display: 'flex', flexDirection: 'row' }}>
-                    <HeaderStore></HeaderStore>
+    const { actualProduct } = this.state;
+    return (
+      <div style={{ display: 'flex', flexDirection: 'column' }}>
+        <div style={{ display: 'flex', flexDirection: 'row' }}>
+          <HeaderStore></HeaderStore>
+        </div>
+
+        {actualProduct ?
+          (
+            <div style={{ display: 'flex', flexDirection: 'row', width: '50%', margin: '0 auto' }}>
+              <div style={{ display: 'flex', margin: '0 auto', alignItems: 'center' }}>
+                <div style={{ display: 'flex', flexDirection: 'column' }}>
+                  <img style={{ width: '350px' }} src={actualProduct.url}></img>
                 </div>
 
-                <div style={{ display: 'flex', flexDirection: 'row' }}>
-                    {actualProduct ? (<h1>{actualProduct.name}</h1>)
-                        :
-                        (
-                            <CircularProgress></CircularProgress>
-                        )}
-                </div>
+                <div style={{ flexDirection: 'column', width: '250px', minHeight: '200px' }}>
+                  <div style={{ flexDirection: 'row' }}>
+                    <span className='text-style'>{actualProduct.name}</span>
+                  </div>
 
-                <div>
+                  <div style={{ flexDirection: 'row' }}>
+                    <span className='price-style'>R$ {actualProduct.price}</span>
+                  </div>
+
+                  <select style={{ width: '70px', background: 'none' }}>
                     {
-                        window.innerWidth > 1400 ?
-                            (<Footer desktop />) : (<Footer mobile />)
+                      actualProduct.sizes.map((s) =>
+                        <option onClick={() => {
+                          this.setState({ size: s })
+                        }}
+                          value={this.state.size}>{s}</option>
+                      )
                     }
-                </div>
+                  </select>
 
-            </div >
-        )
-    }
+                  <div style={{ flexDirection: 'row', margin: '1.5rem 0' }}>
+                    <span className='price-style'>{actualProduct.description}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )
+          :
+          (
+            <div style={{ display: 'flex', flexDirection: 'row', width: '50%', margin: '0 auto' }}>
+              <CircularProgress style={{ margin: '0 auto' }}></CircularProgress>
+            </div>
+          )
+        }
+
+        <div>
+          {
+            window.innerWidth > 1400 ?
+              (<Footer desktop />) : (<Footer mobile />)
+          }
+        </div>
+
+      </div >
+    )
+  }
 }
 
 export default Item
