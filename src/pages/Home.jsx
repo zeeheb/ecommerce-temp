@@ -24,12 +24,14 @@ function Home() {
           </div>
           <div class='col-sm' className='section2'>
             <Typography class='acesse'>Acesse a nossa</Typography>
-            <img
-              class='active'
-              src={OnlineStoreButtongif}
-              alt=''
-              style={{ height: "84px", width: "500px" }}
-            />
+            <Link to={{ pathname: "/store" }}>
+              <img
+                class='active'
+                src={OnlineStoreButtongif}
+                alt=''
+                style={{ height: "84px", width: "500px" }}
+              />
+            </Link>
             <div></div>
             <img
               class='OnlineStoreButtonhover'

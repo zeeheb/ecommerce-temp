@@ -17,8 +17,6 @@ export class Icons extends Component {
 
   constructor(props) {
     super(props)
-
-
     this.state = {
       igSrc: ig,
       fbSrc: fb,
@@ -26,7 +24,6 @@ export class Icons extends Component {
       ytSrc: yt,
     }
   }
-
 
   render() {
     return (
