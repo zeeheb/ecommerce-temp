@@ -13,7 +13,7 @@ function Routes() {
         <Route exact path='/' component={Home}></Route>
         <Route path='/store' component={OnlineStore}></Route>
         <Route path='/cart' component={Cart}></Route>
-        <Route path='/item' component={Item}></Route>
+        <Route path='/item/:id' component={Item}></Route>
       </Switch>
     </BrowserRouter>
   );

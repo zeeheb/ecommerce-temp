@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 import '../styles/components/footer.css'
 import HeaderStore from "../components/HeaderStore";
 import "../styles/pages/onlineStore.css";
+import data from '../data';
+
 
 export class OnlineStore extends Component {
 
@@ -30,50 +32,20 @@ export class OnlineStore extends Component {
         </div>
         <div style={{ gap: '100px', display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center' }}>
 
-          <Link
-            to={{
-              pathname: `/item/32`,
-              itemSpecs: {
-                preco: 10
-              }
-            }}
-            style={{ textDecoration: "none" }}>
-            <div style={{ display: 'flex', flexDirection: 'column' }}>
-              <img style={{ width: '300px' }} src={camiseta1} alt='camiseta'></img>
-              <span className='text-style'>CAMISETA SCUMBAGS</span>
-              <span className='price-style'>R$ 35,00</span>
-            </div>
-          </Link>
+          {
+            data.products.map((i) =>
+              <Link to={{
+                pathname: `/item/${i.id}`
+              }}>
+                <div style={{ display: 'flex', flexDirection: 'column' }}>
+                  <img style={{ width: '300px' }} src={i.url} alt={i.name}></img>
+                  <span className='text-style'>{i.name}</span>
+                  <span className='price-style'>R$ {(i.price)}</span>
+                </div>
+              </Link>
+            )
 
-          <Link
-            to={"/item"}
-            style={{ textDecoration: "none" }}>
-            <div style={{ display: 'flex', flexDirection: 'column' }}>
-              <img style={{ width: '300px' }} src={camiseta2} alt='camiseta'></img>
-              <span className='text-style'>CAMISETA SCUMBAGS</span>
-              <span className='price-style'>R$ 35,00</span>
-            </div>
-          </Link>
-
-          <Link
-            to={"/item"}
-            style={{ textDecoration: "none" }}>
-            <div style={{ display: 'flex', flexDirection: 'column' }}>
-              <img style={{ width: '300px' }} src={camiseta1} alt='camiseta'></img>
-              <span className='text-style'>CAMISETA SCUMBAGS</span>
-              <span className='price-style'>R$ 35,00</span>
-            </div>
-          </Link>
-
-          <Link
-            to={"/item"}
-            style={{ textDecoration: "none" }}>
-            <div style={{ display: 'flex', flexDirection: 'column' }}>
-              <img style={{ width: '300px' }} src={camiseta2} alt='camiseta'></img>
-              <span className='text-style'>CAMISETA SCUMBAGS</span>
-              <span className='price-style'>R$ 35,00</span>
-            </div>
-          </Link>
+          }
 
         </div>
         <div>
