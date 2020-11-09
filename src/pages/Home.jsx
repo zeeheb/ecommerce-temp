@@ -9,39 +9,45 @@ import capaCDgif from "../imgs/cdHomePage.gif";
 import windowsXP from "../imgs/windowsXP.png";
 import OnlineStoreButtongif from "../imgs/online-store-button.gif";
 import OnlineStoreButtonhover from "../imgs/online-store-button-hover.png";
+import cartIcon from "../imgs/carrinho/carrinho.gif";
+import atIcon from "../imgs/@.gif";
 
 function Home() {
   return (
     <div id='home'>
       <Header />
-      <div class='container-fluid' style={{ marginTop: "150px" }}>
-        <div class='row no-gutters' style={{ alignItems: "center" }}>
-          <div class='col-sm' className='section1'>
-
-
-            <Typography></Typography>
-            <img src={windowsXP} alt='' />
-          </div>
-          <div class='col-sm' className='section2'>
-            <Typography class='acesse'>Acesse a nossa</Typography>
+      <div class='flex-container'>
+        <div className='section1'>
+          <img src={windowsXP} alt='' />
+        </div>
+        <div className='section2'>
+          <div>
+            <Typography
+              style={{
+                display: "flex",
+                alignText: "center",
+                flexDirection: "column",
+                marginLeft: "50px",
+              }}
+              class='acesse'
+            >
+              Acesse a nossa
+            </Typography>
             <Link to={{ pathname: "/store" }}>
               <img
                 class='active'
                 src={OnlineStoreButtongif}
                 alt=''
-                style={{ height: "84px", width: "500px" }}
+                className='online-store-button'
               />
             </Link>
-            <div></div>
-            <img
-              class='OnlineStoreButtonhover'
-              src={OnlineStoreButtonhover}
-              alt=''
-            />
+            <div>
+              <img src={atIcon} className='at' alt=''></img>
+              <img src={cartIcon} className='cart' alt=''></img>
+            </div>
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }
