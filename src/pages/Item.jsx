@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import HeaderStore from '../components/HeaderStore'
+import Icons from '../components/Icons'
 import Footer from '../components/Footer'
 import PropTypes from 'prop-types'
 import data from '../data'
@@ -34,9 +35,7 @@ export class Item extends Component {
     const { actualProduct } = this.state;
     return (
       <div style={{ display: 'flex', flexDirection: 'column' }}>
-        <div style={{ display: 'flex', flexDirection: 'row' }}>
-          <HeaderStore></HeaderStore>
-        </div>
+        <HeaderStore></HeaderStore>
 
         {actualProduct ?
           (
@@ -80,6 +79,7 @@ export class Item extends Component {
             </div>
           )
         }
+
 
         <div>
           {

@@ -16,10 +16,8 @@ export class Footer extends Component {
   render() {
 
     return (
-      <div>
-        <div style={{ margin: '0 auto', width: '50%', display: 'flex', marginTop: '80px' }}>
-          <Icons />
-        </div>
+      <div style={{ display: 'flex', flexDirection: 'column', marginTop: '60px' }}>
+        <Icons />
         <footer>
           <img src={footerStreet} alt='street' className={this.props.desktop ? 'footer-image' : 'image-resp'}></img>
 
