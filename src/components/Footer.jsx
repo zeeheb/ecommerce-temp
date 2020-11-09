@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import footerStreet from '../imgs/footerStreet.png'
 import Icons from '../components/Icons'
 import skate from '../imgs/skate.svg'
-import { Divider } from '@material-ui/core';
 
 export class Footer extends Component {
 

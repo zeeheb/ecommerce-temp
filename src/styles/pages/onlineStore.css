@@ -25,3 +25,22 @@
   text-align: center;
 }
 
+.back-style {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #FFFFFF
+}
+
+.item-detail-text {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 25px;
+  text-align: center;
+  color: #00FFFF
+}
+
+.price-detail-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 19px;
+  text-align: center;
+}

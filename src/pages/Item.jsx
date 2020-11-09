@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import HeaderStore from '../components/HeaderStore'
 import Icons from '../components/Icons'
 import Footer from '../components/Footer'
+import { Link } from "react-router-dom";
 import PropTypes from 'prop-types'
 import data from '../data'
 import CircularProgress from '@material-ui/core/CircularProgress';
@@ -40,6 +41,13 @@ export class Item extends Component {
         {actualProduct ?
           (
             <div style={{ display: 'flex', flexDirection: 'row', width: '50%', margin: '0 auto' }}>
+
+              <Link to={{ pathname: "/store" }}>
+                <span style={{ textDecoration: 'underline' }} className='back-style'>
+                  {'< VOLTAR'}
+                </span>
+              </Link>
+
               <div style={{ display: 'flex', margin: '0 auto', alignItems: 'center' }}>
                 <div style={{ display: 'flex', flexDirection: 'column' }}>
                   <img style={{ width: '350px' }} src={actualProduct.url}></img>
@@ -47,11 +55,11 @@ export class Item extends Component {
 
                 <div style={{ flexDirection: 'column', width: '250px', minHeight: '200px' }}>
                   <div style={{ flexDirection: 'row' }}>
-                    <span className='text-style'>{actualProduct.name}</span>
+                    <span className='item-detail-text'>{actualProduct.name}</span>
                   </div>
 
                   <div style={{ flexDirection: 'row' }}>
-                    <span className='price-style'>R$ {actualProduct.price}</span>
+                    <span className='price-detail-text'>R$ {actualProduct.price}</span>
                   </div>
 
                   <select style={{ width: '70px', background: 'none' }}>
@@ -88,7 +96,7 @@ export class Item extends Component {
           }
         </div>
 
-      </div >
+      </div>
     )
   }
 }
