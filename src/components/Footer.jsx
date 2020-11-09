@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import footerStreet from '../imgs/footerStreet.png'
 import Icons from '../components/Icons'
 import skate from '../imgs/skate.svg'
+import { Divider } from '@material-ui/core';
 
 export class Footer extends Component {
 
@@ -16,7 +17,7 @@ export class Footer extends Component {
   render() {
 
     return (
-      <div style={{ display: 'flex', flexDirection: 'column', marginTop: '60px' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', marginTop: '60px', borderTop: 'solid #3b2a51', borderWidth: '2px', padding: '15px' }}>
         <Icons />
         <footer>
           <img src={footerStreet} alt='street' className={this.props.desktop ? 'footer-image' : 'image-resp'}></img>
