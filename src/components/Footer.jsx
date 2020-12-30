@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import footerStreet from '../imgs/footerStreet.png'
 import Icons from '../components/Icons'
 import skate from '../imgs/skate.svg'
+import { Divider } from '@material-ui/core';
+import skategif from '../imgs/skate.gif'
 
 export class Footer extends Component {
 
@@ -16,15 +18,20 @@ export class Footer extends Component {
   render() {
 
     return (
-      <div style={{ display: 'flex', flexDirection: 'column', marginTop: '60px', borderTop: 'solid #3b2a51', borderWidth: '2px', padding: '15px' }}>
-        <Icons />
-        <footer>
-          <img src={footerStreet} alt='street' className={this.props.desktop ? 'footer-image' : 'image-resp'}></img>
-
-          <div style={{ display: 'flex', margin: '0 auto', width: '10px' }}>
-            <img src={skate} className={this.props.desktop ? 'ft-gif' : 'gif-resp'}></img>
+      <div>
+        <div style={{ display: 'flex', flexDirection: 'column', marginTop: '60px', borderTop: 'solid #3b2a51', borderWidth: '2px', padding: '15px' }}>
+          <Icons></Icons>
+        </div>
+        <div style={{ position: 'relative' }}>
+          <div style={{ position: 'absolute', width: '100%' }}>
+            <img style={{ width: '100%' }} src={footerStreet}></img>
           </div>
-        </footer>
+          <div style={{ position: 'absolute', width: '100%' }}>
+            <marquee direction='right' scrollamount='30' >
+              <img style={{ width: '15%' }} src={skategif}></img>
+            </marquee>
+          </div>
+        </div>
       </div>
     )
   }
