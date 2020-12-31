@@ -1,8 +1,19 @@
 import camiseta1 from "./imgs/camisetas/camiseta1.svg";
 import camiseta2 from "./imgs/camisetas/camiseta2.svg";
+import coming from "./styles/pages/coming3.gif"
+import settings from './settings'
 
 export default {
-
+    comingProduct: [
+        {
+            id: 999,
+            name: 'New Merch',
+            price: "$$.$$",
+            sizes: ['X' ,'XX', 'XXX'],
+            url: coming,
+            description: 'lorem ipsum'  
+        }
+    ],
     products:
         [
             {
