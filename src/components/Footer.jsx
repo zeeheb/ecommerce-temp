@@ -6,7 +6,7 @@ import { Divider } from '@material-ui/core';
 import skategif from '../imgs/skate.gif'
 
 export class Footer extends Component {
-
+ 
   constructor(props) {
     super(props)
   }

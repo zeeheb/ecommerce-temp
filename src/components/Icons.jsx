@@ -38,7 +38,7 @@ export class Icons extends Component {
                 rel='noopener noreferrer'>
                 <img onMouseOver={() => this.setState({ fbSrc: fbHover })} onMouseOut={() => this.setState({ fbSrc: fb })} src={this.state.fbSrc}></img>
               </a>
-            </button>
+            </button> 
           </div>
 
           <div class='col-sm' style={{ padding: '10px' }} >
