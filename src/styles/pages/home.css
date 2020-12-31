@@ -31,13 +31,13 @@
 
 .section1 {
   flex: 1;
-  margin: 70px 0px 0px 100px;
+  margin: 70px 0px 0px 40px;
 }
 
 .section2 {
   flex: 1;
   align-items: center;
-  margin: 70px 0px 0px 200px;
+  margin: 200px 0px 0px 30px;
   text-align: center;
 }
 
