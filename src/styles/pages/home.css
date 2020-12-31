@@ -30,30 +30,24 @@
 }
 
 .section1 {
-  display: flex;
+  flex: 1;
   margin: 70px 0px 0px 100px;
 }
 
 .section2 {
-  display: flex;
+  flex: 1;
   align-items: center;
   margin: 70px 0px 0px 200px;
   text-align: center;
 }
-
-/*   right: -350px;
-  top: 250px; */
 
 .acesse {
   font-family: Comic;
   font-size: 38px;
   font-weight: 700;
   text-align: center;
-  margin-right: 70px;
 }
 
-.OnlineStoreButtonhover {
-}
 .static {
   position: absolute;
 }
@@ -62,11 +56,17 @@
   opacity: 0;
 }
 
-.online-store-button {
-  height: 84px;
-  width: 450px;
+.OnlineStoreButton {
+  position: relative;
+  margin: 0 auto;
 }
-.online-store-button:hover {
+
+.online-store-animated-button {
+  height: 90px;
+  width: 485px;
+}
+
+.online-store-static-button {
 }
 
 .at {
