@@ -46,17 +46,15 @@ export class OnlineStore extends Component {
                 </div>
               </Link>
             ) :
-           data.products.map((i) =>       
+           data.products.map((j) =>       
             data.comingProduct.map((i) =>
-              <Link to={{
-              pathname: `/item/${data.comingProduct.id}`
-              }}>
+              
                 <div style={{ display: 'flex', flexDirection: 'column' }}>
                   <img style={{ width: '250px' }} src={i.url} alt={i.name}></img>
                   <span className='text-style'>{i.name}</span>
                   <span className='price-style'>R$ {i.price}</span>
                   </div>
-              </Link>
+            
                 )
               ) 
           }

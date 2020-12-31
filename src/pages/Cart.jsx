@@ -1,10 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Footer from '../components/Footer'
 import HeaderStore from "../components/HeaderStore";
 import data from "../data";
 import boxGuy from "../imgs/boxguy.png";
 import cyanButton from "../imgs/cyanButton.png";
 import greyButton from "../imgs/greyButton.png";
+import settings from "../settings";
 import "../styles/pages/cart.css";
 
 function Cart() {
@@ -25,6 +27,12 @@ function Cart() {
           </div>
           <div style={{ flex: 5, paddingRight: "150px" }}>
             <div>
+
+            {settings.done ? (
+
+            
+
+            
               <table style={{ width: "100%" }}>
                 {data.products.map((i) => (
                   <tr
@@ -68,9 +76,22 @@ function Cart() {
                       </button>
                     </td>
                   </tr>
-                ))}
+                ))
+              
+              }
               </table>
+              ): 
+                data.comingProduct.map((i) => (
+                  <div style={{ width: "100%", paddingLeft: '200px'}}>
+                  <img src={i.url} alt={i.name}></img>
+                  </div>
+                  ))
+                
+            }
             </div>
+
+            {
+              settings.done &&
             <div style={{ marginTop: "20px", display: "flex", float: "right" }}>
               <div className="navButtonContainer">
                 <Link to={"/store"}>
@@ -85,9 +106,11 @@ function Cart() {
                 </Link>
               </div>
             </div>
+            }
           </div>
         </div>
       </div>
+      <Footer></Footer>
     </div>
   );
 }

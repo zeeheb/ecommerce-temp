@@ -5,6 +5,7 @@ import Footer from '../components/Footer'
 import { Link } from "react-router-dom";
 import PropTypes from 'prop-types'
 import data from '../data'
+import settings from '../settings'
 import CircularProgress from '@material-ui/core/CircularProgress';
 
 
@@ -24,11 +25,14 @@ export class Item extends Component {
   }
 
   checkActual = () => {
-    data.products.forEach((i) => {
-      if (this.props.match && i.id.toString() === this.props.match.params.id) {
-        this.setState({ actualProduct: i })
-      }
-    })
+
+    if(settings.done) {
+      data.products.forEach((i) => {
+        if (this.props.match && i.id.toString() === this.props.match.params.id) {
+          this.setState({ actualProduct: i })
+        }
+      })
+    } 
   }
 
   render() {
