@@ -75,13 +75,13 @@ function Cart() {
               <div className="navButtonContainer">
                 <Link to={"/store"}>
                   <img alt="" src={greyButton}></img>
-                  <span className="navButtonText">VOLTAR</span>
+                  <span className="navButtonText">{"<VOLTAR"}</span>
                 </Link>
               </div>
               <div className="navButtonContainer">
                 <Link to={"/checkout"}>
                   <img alt="" src={cyanButton}></img>
-                  <span className="navButtonText">CHECKOUT</span>
+                  <span className="navButtonText">{"CHECKOUT>"}</span>
                 </Link>
               </div>
             </div>

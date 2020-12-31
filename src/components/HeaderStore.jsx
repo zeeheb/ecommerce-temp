@@ -16,11 +16,13 @@ export class Header extends Component {
         }}
       >
         <div style={{ flex: 2 }}>
-          <img className="logo-style" src={logo} alt="" />
+          <Link to="/">
+            <img className="logo-style" src={logo} alt="" />
+          </Link>
         </div>
         <div style={{ flex: 7 }} />
         <div style={{ flex: 3 }}>
-          <Link to={"/Cart"} style={{ textDecoration: "none" }}>
+          <Link to={"/cart"} style={{ textDecoration: "none" }}>
             <div className="appbar-wrapper1">
               <img src={cartIcon} alt="cart" height="66px" width="52px" />
               MEU CARRINHO
