@@ -1,14 +1,16 @@
 .appbar-wrapper1 {
   border: 1px solid #ffffff;
-  padding: 10px;
+  padding: 2px;
   color: #fff;
+  margin-right: 10px;
+  margin-bottom: 5px;
   margin-top: 5px;
   font-family: Comic Sans MS;
   font-size: 19px;
   font-style: normal;
   font-weight: 700;
   letter-spacing: 0em;
-  float: left;
+  float: right;
   color: #fff;
   text-decoration: underline;
   text-underline-position: under;
@@ -20,6 +22,6 @@
 }
 
 .logo-style {
-  width: 250px;
-  margin: 30px;
+  width: 200px;
+  margin: 10px;
 }

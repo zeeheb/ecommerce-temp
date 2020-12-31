@@ -12,7 +12,7 @@ export class Header extends Component {
           display: "flex",
           flexDirection: "row",
           background: "black",
-          height: "120px",
+          height: "80px",
         }}
       >
         <div style={{ flex: 2 }}>
@@ -22,7 +22,7 @@ export class Header extends Component {
         <div style={{ flex: 3 }}>
           <Link to={"/Cart"} style={{ textDecoration: "none" }}>
             <div className="appbar-wrapper1">
-              <img src={cartIcon} alt="cart" height="86px" width="72px" />
+              <img src={cartIcon} alt="cart" height="66px" width="52px" />
               MEU CARRINHO
             </div>
           </Link>
