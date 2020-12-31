@@ -38,7 +38,7 @@ export class OnlineStore extends Component {
                 pathname: `/item/${i.id}`
               }}>
                 <div style={{ display: 'flex', flexDirection: 'column' }}>
-                  <img style={{ width: '300px' }} src={i.url} alt={i.name}></img>
+                  <img style={{ width: '250px' }} src={i.url} alt={i.name}></img>
                   <span className='text-style'>{i.name}</span>
                   <span className='price-style'>R$ {(i.price)}</span>
                 </div>
